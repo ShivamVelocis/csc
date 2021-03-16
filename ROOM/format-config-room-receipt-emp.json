@@ -1,5 +1,5 @@
 {
-    "key": "pacc-payment-receipt-new-emp",
+    "key": "room-payment-receipt-emp",
     "config": {
         "pageSize": "A4",
         "content": [
@@ -55,7 +55,7 @@
                     0,
                     0,
                     0,
-                    20
+                    30
                 ]
             },
             {
@@ -104,7 +104,7 @@
             {
                 "margin": [
                     0,
-                    10,
+                    20,
                     0,
                     0
                 ],
@@ -132,10 +132,10 @@
                     },
                     {
                         "text": "Date : ",
-                        "width": 50,
+                        "width": "auto",
                         "alignment": "right",
                         "margin": [
-                            0,
+                            5,
                             15,
                             0,
                             0
@@ -161,7 +161,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -172,7 +172,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -182,22 +182,22 @@
             {
                 "columns": [
                     {
-                        "text": "Location : ",
+                        "text": "Name : ",
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
                         "bold": true
                     },
                     {
-                        "text": "{{bkLocation}}",
+                        "text": "{{applicantName}}",
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -211,7 +211,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -222,7 +222,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -232,147 +232,22 @@
             {
                 "columns": [
                     {
-                        "text": "Date of booking : ",
+                        "text": "Booked Rooms: ",
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
                         "bold": true
                     },
                     {
-                        "text": "{{bkFromTo}}",
+                        "text": "{{bookedRooms}}",
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "text": "Payment Type : ",
-                        "width": "auto",
-                        "margin": [
-                            0,
-                            15,
-                            0,
-                            0
-                        ],
-                        "bold": true
-                    },
-                    {
-                        "text": "{{paymentType}}",
-                        "width": "auto",
-                        "margin": [
-                            5,
-                            15,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "text": "Facilitation Charges : ",
-                        "width": "auto",
-                        "margin": [
-                            0,
-                            15,
-                            0,
-                            0
-                        ],
-                        "bold": true
-                    },
-                    {
-                        "text": "{{facilitationCharge}}",
-                        "width": "auto",
-                        "margin": [
-                            5,
-                            15,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "text": "Refundable Security : ",
-                        "width": "auto",
-                        "margin": [
-                            0,
-                            15,
-                            0,
-                            0
-                        ],
-                        "bold": true
-                    },
-                    {
-                        "text": "{{refundableCharges}}",
-                        "width": "auto",
-                        "margin": [
-                            5,
-                            15,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "text": "Date/Venue Change Charges : ",
-                        "width": "auto",
-                        "margin": [
-                            0,
-                            15,
-                            0,
-                            0
-                        ],
-                        "bold": true
-                    },
-                    {
-                        "text": "{{dateVenueChangeCharges}}",
-                        "width": "auto",
-                        "margin": [
-                            5,
-                            15,
-                            0,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "text": "Discount Type : ",
-                        "width": "auto",
-                        "margin": [
-                            0,
-                            15,
-                            0,
-                            0
-                        ],
-                        "bold": true
-                    },
-                    {
-                        "text": "{{discType}}",
-                        "width": "auto",
-                        "margin": [
-                            5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -386,7 +261,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -397,7 +272,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -411,7 +286,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -422,7 +297,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -436,7 +311,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -447,7 +322,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -457,55 +332,319 @@
             {
                 "margin": [
                     0,
-                    15,
+                    10,
                     0,
                     0
                 ],
                 "text": [
                     {
-                        "text": "Rent : ",
+                        "text": "Rooms Rent : ",
                         "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
                         "bold": true
                     },
                     {
                         "text": "{{baseCharge}}",
-                        "width": "auto"
-                    },
-                    {
-                        "text": "    Cleaning Charges : ",
                         "width": "auto",
-                        "bold": true
+                        "margin": [
+                            3,
+                            10,
+                            0,
+                            0
+                        ]
                     },
                     {
-                        "text": "{{clCharge}}",
-                        "width": "auto"
-                    },
-                    {
-                        "text": "    UTGST : ",
+                        "text": "   UTGST : ",
                         "width": "auto",
+                        "margin": [
+                            3,
+                            10,
+                            0,
+                            0
+                        ],
                         "bold": true
                     },
                     {
                         "text": "{{utgst}}",
-                        "width": "auto"
+                        "width": "auto",
+                        "margin": [
+                            3,
+                            10,
+                            0,
+                            0
+                        ]
                     },
                     {
-                        "text": "    CGST : ",
+                        "text": "   CGST : ",
                         "width": "auto",
+                        "margin": [
+                            3,
+                            10,
+                            0,
+                            0
+                        ],
                         "bold": true
                     },
                     {
                         "text": "{{cgst}}",
-                        "width": "auto"
+                        "width": "auto",
+                        "margin": [
+                            3,
+                            15,
+                            2,
+                            0
+                        ]
                     },
                     {
-                        "text": "    Total GST : ",
+                        "text": "   Total GST : ",
                         "width": "auto",
+                        "margin": [
+                            3,
+                            10,
+                            0,
+                            0
+                        ],
                         "bold": true
                     },
                     {
                         "text": "{{tgst}}",
-                        "width": "auto"
+                        "width": "auto",
+                        "margin": [
+                            3,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Facilitation Charges : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{facilitationCharge}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Purpose of booking : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{bookingPurpose}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Location : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{bkLocation}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Start Date : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{bkStartDate}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "End Date : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{bkEndDate}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Discount Type : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{bkDiscountType}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Payment Type : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{paymentType}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Refundable Security : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{refundableCharges}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Date/Venue Change Charges : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            10,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{dateVenueChangeCharges}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            10,
+                            0,
+                            0
+                        ]
                     }
                 ]
             },
@@ -516,7 +655,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -527,7 +666,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -541,7 +680,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -552,7 +691,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -566,7 +705,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -577,7 +716,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -591,7 +730,7 @@
                         "width": "auto",
                         "margin": [
                             0,
-                            15,
+                            10,
                             0,
                             0
                         ],
@@ -602,7 +741,7 @@
                         "width": "auto",
                         "margin": [
                             5,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -612,7 +751,7 @@
                         "width": "auto",
                         "margin": [
                             2,
-                            15,
+                            10,
                             0,
                             0
                         ]
@@ -621,8 +760,8 @@
                         "text": "{{totalPaymentInWords}}",
                         "width": "auto",
                         "margin": [
-                            2,
-                            15,
+                            0,
+                            10,
                             0,
                             0
                         ]
@@ -631,8 +770,8 @@
                         "text": ")",
                         "width": "auto",
                         "margin": [
-                            2,
-                            15,
+                            0,
+                            10,
                             0,
                             0
                         ]
@@ -653,7 +792,7 @@
                         "bold": true
                     },
                     {
-                        "text": "   Applicant Name :  ",
+                        "text": " Applicant Name :  ",
                         "width": "auto",
                         "bold": true
                     },
@@ -662,7 +801,7 @@
                         "width": "auto"
                     },
                     {
-                        "text": "    Bank Name :  ",
+                        "text": "   Bank Name :  ",
                         "width": "auto",
                         "bold": true
                     },

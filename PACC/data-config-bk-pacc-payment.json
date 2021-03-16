@@ -1,5 +1,5 @@
 {
-   "key": "pacc-payment-receipt",
+   "key": "pacc-payment-receipt-new",
    "DataConfigs": {
       "serviceName": "rainmaker-tl",
       "version": "1.0.0",
@@ -13,6 +13,36 @@
             "mappings": [
                {
                   "direct": [
+                     {
+                        "variable": "dateVenueChangeCharges",
+                        "value": {
+                           "path": "$.paymentInfo.dateVenueChangeCharges"
+                        }
+                     },
+                     {
+                        "variable": "accountholderName",
+                        "value": {
+                           "path": "$.bankInfo.accountholderName"
+                        }
+                     },
+                     {
+                        "variable": "rBankName",
+                        "value": {
+                           "path": "$.bankInfo.rBankName"
+                        }
+                     },
+                     {
+                        "variable": "rBankACNo",
+                        "value": {
+                           "path": "$.bankInfo.rBankACNo"
+                        }
+                     },
+                     {
+                        "variable": "rIFSCCode",
+                        "value": {
+                           "path": "$.bankInfo.rIFSCCode"
+                        }
+                     },
                      {
                         "variable": "pdfLogo",
                         "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
@@ -73,6 +103,12 @@
                         }
                      },
                      {
+                        "variable": "applicationNumber",
+                        "value": {
+                           "path": "$.booking.applicationNumber"
+                        }
+                     },
+                     {
                         "variable": "paymentType",
                         "value": {
                            "path": "$.paymentInfo.paymentType"
@@ -112,6 +148,24 @@
                         "variable": "placeOfService",
                         "value": {
                            "path": "$.applicantDetail.placeOfService"
+                        }
+                     },
+                     {
+                        "variable": "applicantName",
+                        "value": {
+                           "path": "$.applicantDetail.name"
+                        }
+                     },
+                     {
+                        "variable": "applicantAddress1",
+                        "value": {
+                           "path": "$.applicantDetail.permanentAddress"
+                        }
+                     },
+                     {
+                        "variable": "applicantAddress2",
+                        "value": {
+                           "path": "$.applicantDetail.permanentCity"
                         }
                      },
                      {
@@ -166,6 +220,12 @@
                         "variable": "totalPaymentInWords",
                         "value": {
                            "path": "$.paymentInfo.totalPaymentInWords"
+                        }
+                     },
+                     {
+                        "variable": "currentDate",
+                        "value": {
+                           "path": "$.paymentInfo.currentDate"
                         }
                      }
                   ]

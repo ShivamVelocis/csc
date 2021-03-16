@@ -13,6 +13,42 @@
                {
                   "direct": [
                      {
+                        "variable": "dateVenueChangeCharges",
+                        "value": {
+                           "path": "$.paymentInfo.dateVenueChangeCharges"
+                        }
+                     },
+                     {
+                        "variable": "cardNumberLast4",
+                        "value": {
+                           "path": "$.paymentInfo.cardNumberLast4"
+                        }
+                     },
+                     {
+                        "variable": "accountholderName",
+                        "value": {
+                           "path": "$.bankInfo.accountholderName"
+                        }
+                     },
+                     {
+                        "variable": "rBankName",
+                        "value": {
+                           "path": "$.bankInfo.rBankName"
+                        }
+                     },
+                     {
+                        "variable": "rBankACNo",
+                        "value": {
+                           "path": "$.bankInfo.rBankACNo"
+                        }
+                     },
+                     {
+                        "variable": "rIFSCCode",
+                        "value": {
+                           "path": "$.bankInfo.rIFSCCode"
+                        }
+                     },
+                     {
                         "variable": "samparkName",
                         "value": {
                            "path": "$.emp.samparkName"
@@ -45,7 +81,7 @@
                      {
                         "variable": "receiptNo",
                         "value": {
-                           "path": "$.bookingDetail.applicationNumber"
+                           "path": "$.paymentInfo.receiptNo"
                         }
                      },
                      {
@@ -111,7 +147,7 @@
                      {
                         "variable": "mcGSTN",
                         "value": {
-                           "path": "$.tenentInfo.mcGSTN"
+                           "path": "$.tenantInfo.mcGSTN"
                         }
                      },
                      {
@@ -123,13 +159,13 @@
                      {
                         "variable": "stateCode",
                         "value": {
-                           "path": "$.tenentInfo.statecode"
+                           "path": "$.tenantInfo.statecode"
                         }
                      },
                      {
                         "variable": "hsnCode",
                         "value": {
-                           "path": "$.tenentInfo.hsncode"
+                           "path": "$.tenantInfo.hsncode"
                         }
                      },
                      {

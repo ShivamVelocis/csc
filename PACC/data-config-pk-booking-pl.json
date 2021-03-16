@@ -13,6 +13,12 @@
                {
                   "direct": [
                      {
+                        "variable": "dateVenueChangeCharges",
+                        "value": {
+                           "path": "$.paymentInfo.dateVenueChangeCharges"
+                        }
+                     },
+                     {
                         "variable": "pdfLogo",
                         "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
                         "type": "image"
@@ -62,7 +68,7 @@
                      {
                         "variable": "receiptNo",
                         "value": {
-                           "path": "$.bookingDetail.applicationNumber"
+                           "path": "$.paymentInfo.receiptNo"
                         }
                      },
                      {
@@ -203,27 +209,27 @@
                         }
                      },
                      {
-                        "variable": "municipalityName",
+                        "variable": "accountholderName",
                         "value": {
-                           "path": "$.tenantInfo.municipalityName"
+                           "path": "$.bankInfo.accountholderName"
                         }
                      },
                      {
-                        "variable": "municipalityAddress",
+                        "variable": "rBankName",
                         "value": {
-                           "path": "$.tenantInfo.address"
+                           "path": "$.bankInfo.rBankName"
                         }
                      },
                      {
-                        "variable": "municipalityContact",
+                        "variable": "rBankACNo",
                         "value": {
-                           "path": "$.tenantInfo.contactNumber"
+                           "path": "$.bankInfo.rBankACNo"
                         }
                      },
                      {
-                        "variable": "municipalityWebSite",
+                        "variable": "rIFSCCode",
                         "value": {
-                           "path": "$.tenantInfo.webSite"
+                           "path": "$.bankInfo.rIFSCCode"
                         }
                      }
                   ]

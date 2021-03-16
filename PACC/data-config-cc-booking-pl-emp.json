@@ -13,6 +13,30 @@
                {
                   "direct": [
                      {
+                        "variable": "accountholderName",
+                        "value": {
+                           "path": "$.bankInfo.accountholderName"
+                        }
+                     },
+                     {
+                        "variable": "rBankName",
+                        "value": {
+                           "path": "$.bankInfo.rBankName"
+                        }
+                     },
+                     {
+                        "variable": "rBankACNo",
+                        "value": {
+                           "path": "$.bankInfo.rBankACNo"
+                        }
+                     },
+                     {
+                        "variable": "rIFSCCode",
+                        "value": {
+                           "path": "$.bankInfo.rIFSCCode"
+                        }
+                     },
+                     {
                         "variable": "samparkName",
                         "value": {
                            "path": "$.emp.samparkName"
@@ -45,7 +69,7 @@
                      {
                         "variable": "receiptNo",
                         "value": {
-                           "path": "$.bookingDetail.applicationNumber"
+                           "path": "$.paymentInfo.receiptNo"
                         }
                      },
                      {
@@ -111,7 +135,7 @@
                      {
                         "variable": "mcGSTN",
                         "value": {
-                           "path": "$.tenentInfo.mcGSTN"
+                           "path": "$.tenantInfo.mcGSTN"
                         }
                      },
                      {
@@ -123,13 +147,13 @@
                      {
                         "variable": "stateCode",
                         "value": {
-                           "path": "$.tenentInfo.statecode"
+                           "path": "$.tenantInfo.statecode"
                         }
                      },
                      {
                         "variable": "hsnCode",
                         "value": {
-                           "path": "$.tenentInfo.hsncode"
+                           "path": "$.tenantInfo.hsncode"
                         }
                      },
                      {
@@ -139,15 +163,21 @@
                         }
                      },
                      {
-                        "variable": "paymentDate",
+                        "variable": "dateVenueChangeCharges",
                         "value": {
-                           "path": "$.paymentInfo.paymentDate"
+                           "path": "$.paymentInfo.dateVenueChangeCharges"
                         }
                      },
                      {
-                        "variable": "variable8",
+                        "variable": "cardNumberLast4",
                         "value": {
-                           "path": "$.bookingDetail.applicationDate"
+                           "path": "$.paymentInfo.cardNumberLast4"
+                        }
+                     },
+                     {
+                        "variable": "paymentDate",
+                        "value": {
+                           "path": "$.paymentInfo.paymentDate"
                         }
                      },
                      {

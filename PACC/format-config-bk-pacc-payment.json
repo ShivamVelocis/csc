@@ -1,6 +1,7 @@
 {
-    "key": "pacc-payment-receipt",
+    "key": "pacc-payment-receipt-new",
     "config": {
+        "pageSize": "A4",
         "content": [
             {
                 "image": "{{pdfLogo}}",
@@ -54,7 +55,7 @@
                     0,
                     0,
                     0,
-                    50
+                    20
                 ]
             },
             {
@@ -67,7 +68,7 @@
                 "columns": [
                     {
                         "text": "Receipt No. : ",
-                        "width": 72,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -80,7 +81,7 @@
                         "text": "{{receiptNo}}",
                         "width": 300,
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -113,8 +114,33 @@
             {
                 "columns": [
                     {
+                        "text": "Application No. : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            15,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{applicationNumber}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
+                            15,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
                         "text": "Location : ",
-                        "width": 60,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -127,7 +153,7 @@
                         "text": "{{bkLocation}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -138,8 +164,8 @@
             {
                 "columns": [
                     {
-                        "text": "Dept : ",
-                        "width": 60,
+                        "text": "Booking Type : ",
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -152,7 +178,7 @@
                         "text": "{{bkDept}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -164,7 +190,7 @@
                 "columns": [
                     {
                         "text": "Date of booking : ",
-                        "width": 100,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -177,7 +203,7 @@
                         "text": "{{bkFromTo}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -189,7 +215,7 @@
                 "columns": [
                     {
                         "text": "Payment Type : ",
-                        "width": 90,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -202,7 +228,32 @@
                         "text": "{{paymentType}}",
                         "width": "auto",
                         "margin": [
+                            15,
+                            15,
                             0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Facilitation Charges : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            15,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "Not Applicable",
+                        "width": "auto",
+                        "margin": [
+                            5,
                             15,
                             0,
                             0
@@ -214,7 +265,7 @@
                 "columns": [
                     {
                         "text": "Refundable Security : ",
-                        "width": 120,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -227,7 +278,32 @@
                         "text": "{{refundableCharges}}",
                         "width": "auto",
                         "margin": [
+                            15,
+                            15,
                             0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "text": "Date/Venue Change Charges : ",
+                        "width": "auto",
+                        "margin": [
+                            0,
+                            15,
+                            0,
+                            0
+                        ],
+                        "bold": true
+                    },
+                    {
+                        "text": "{{dateVenueChangeCharges}}",
+                        "width": "auto",
+                        "margin": [
+                            5,
                             15,
                             0,
                             0
@@ -239,7 +315,7 @@
                 "columns": [
                     {
                         "text": "Discount Type : ",
-                        "width": 100,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -252,7 +328,7 @@
                         "text": "{{discType}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -264,7 +340,7 @@
                 "columns": [
                     {
                         "text": "Customer GSTIN : ",
-                        "width": 100,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -277,7 +353,7 @@
                         "text": "{{custGSTN}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -289,7 +365,7 @@
                 "columns": [
                     {
                         "text": "MC GST No. : ",
-                        "width": 80,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -302,7 +378,7 @@
                         "text": "{{mcGSTN}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -314,7 +390,7 @@
                 "columns": [
                     {
                         "text": "Place of Service : ",
-                        "width": 100,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -327,7 +403,7 @@
                         "text": "{{placeOfService}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -339,11 +415,11 @@
                 "columns": [
                     {
                         "text": "Rent : ",
-                        "width": 30,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
-                            0,
+                            2,
                             0
                         ],
                         "bold": true
@@ -360,11 +436,11 @@
                     },
                     {
                         "text": "Cleaning Charges : ",
-                        "width": 95,
+                        "width": "auto",
                         "margin": [
-                            0,
+                            5,
                             15,
-                            0,
+                            2,
                             0
                         ],
                         "bold": true
@@ -381,11 +457,11 @@
                     },
                     {
                         "text": "UTGST : ",
-                        "width": 42,
+                        "width": "auto",
                         "margin": [
-                            0,
+                            5,
                             15,
-                            0,
+                            2,
                             0
                         ],
                         "bold": true
@@ -402,11 +478,11 @@
                     },
                     {
                         "text": "CGST : ",
-                        "width": 36,
+                        "width": "auto",
                         "margin": [
-                            0,
+                            5,
                             15,
-                            0,
+                            2,
                             0
                         ],
                         "bold": true
@@ -423,11 +499,11 @@
                     },
                     {
                         "text": "Total GST : ",
-                        "width": 55,
+                        "width": "auto",
                         "margin": [
-                            0,
+                            5,
                             15,
-                            0,
+                            2,
                             0
                         ],
                         "bold": true
@@ -438,7 +514,7 @@
                         "margin": [
                             0,
                             15,
-                            0,
+                            2,
                             0
                         ]
                     }
@@ -448,7 +524,7 @@
                 "columns": [
                     {
                         "text": "Bank Name : ",
-                        "width": 75,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -461,7 +537,7 @@
                         "text": "{{bankName}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -473,7 +549,7 @@
                 "columns": [
                     {
                         "text": "Transaction No : ",
-                        "width": 90,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -486,7 +562,7 @@
                         "text": "{{transactionId}}",
                         "width": "auto",
                         "margin": [
-                            0,
+                            15,
                             15,
                             0,
                             0
@@ -498,7 +574,7 @@
                 "columns": [
                     {
                         "text": "{{paymentType}}",
-                        "width": 90,
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -509,7 +585,27 @@
                     },
                     {
                         "text": "{{totalPayment}}",
-                        "width": 100,
+                        "width": "auto",
+                        "margin": [
+                            15,
+                            15,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "text": "(",
+                        "width": "auto",
+                        "margin": [
+                            2,
+                            15,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "text": "{{totalPaymentInWords}}",
+                        "width": "auto",
                         "margin": [
                             0,
                             15,
@@ -518,10 +614,10 @@
                         ]
                     },
                     {
-                        "text": "{{totalPaymentInWords}}",
-                        "width": "*",
+                        "text": ")",
+                        "width": "auto",
                         "margin": [
-                            0,
+                            2,
                             15,
                             0,
                             0
@@ -536,17 +632,53 @@
                     0,
                     0
                 ],
-                "alignment": "justify",
-                "bold": true,
                 "text": [
-                    "Thanks for visiting e-Sampark. Before leaving the counter, please check receipt & the balance amount. Payment through cheque subject to realisation of cheque. This is receipt on thermal paper. Please keep a photocopy of this receipt for your future reference. If You are 18 years or above as on ",
-                    "{{currentDate}}",
-                    " , a resident of Chandigarh and not enrolled yet as voter. Enroll Now"
+                    {
+                        "text": "Bank Details for Refund : ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "   Applicant Name :  ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{accountholderName}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "    Bank Name :  ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{rBankName}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "    Bank A/C No. :  ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{rBankACNo}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "     IFSC Code : ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{rIFSCCode}}",
+                        "width": "auto"
+                    }
                 ]
             }
         ],
         "defaultStyle": {
-            "fontSize": 11
+            "fontSize": 10
         }
     }
 }

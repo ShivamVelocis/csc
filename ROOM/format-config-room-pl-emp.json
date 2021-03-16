@@ -1,5 +1,5 @@
 {
-    "key": "bk-cc-booking-pl-emp",
+    "key": "bk-room-booking-pl-emp",
     "config": {
         "pageSize": "A4",
         "content": [
@@ -28,8 +28,8 @@
             },
             {
                 "text": "{{municipalityAddress}}",
-                "alignment": "center",
                 "fontSize": 12,
+                "alignment": "center",
                 "margin": [
                     0,
                     0,
@@ -39,8 +39,8 @@
             },
             {
                 "text": "{{municipalityContact}}",
-                "alignment": "center",
                 "fontSize": 12,
+                "alignment": "center",
                 "margin": [
                     0,
                     0,
@@ -59,19 +59,19 @@
                 ]
             },
             {
-                "text": "Permission letter for booking of Park/Community Center/Commercial Ground/Open Space",
+                "text": "Permission letter for booking of Room",
                 "alignment": "center",
                 "fontSize": 10,
-                "bold": true
-            },
-            {
-                "text": "FROM",
+                "bold": true,
                 "margin": [
                     0,
-                    20,
                     0,
-                    0
+                    0,
+                    30
                 ]
+            },
+            {
+                "text": "FROM"
             },
             {
                 "margin": [
@@ -159,13 +159,22 @@
                         "text": "Subject : "
                     },
                     {
-                        "text": "Permission to use the "
-                    },
-                    {
-                        "text": "{{venueName}} "
+                        "text": "Permission to use "
                     },
                     {
                         "text": " "
+                    },
+                    {
+                        "text": "{{bookedRooms}}"
+                    },
+                    {
+                        "text": " at "
+                    },
+                    {
+                        "text": "{{venueName}}"
+                    },
+                    {
+                        "text": ", "
                     },
                     {
                         "text": "{{venueSector}}"
@@ -184,21 +193,28 @@
                 ],
                 "text": [
                     {
-                        "text": "Ref: Permission is herby accorded to use the "
+                        "text": "Ref : Permission is herby accorded to use "
                     },
                     {
-                        "text": "{{venueName}}",
-                        "bold": true
+                        "text": " "
                     },
                     {
-                        "text": " center by Holding "
+                        "text": "{{bookedRooms}}"
                     },
                     {
-                        "text": "{{bookingPurpose}}",
-                        "bold": true
+                        "text": " at "
                     },
                     {
-                        "text": " mentioned in your letter"
+                        "text": "{{venueName}}"
+                    },
+                    {
+                        "text": " "
+                    },
+                    {
+                        "text": "{{bookingPurpose}}"
+                    },
+                    {
+                        "text": " mentioned in your letter."
                     }
                 ]
             },
@@ -211,7 +227,7 @@
                 ],
                 "text": [
                     {
-                        "text": "Detailed Amount : "
+                        "text": "Detailed Amount :  "
                     },
                     {
                         "text": "Cleaning Charges :- "
@@ -221,7 +237,7 @@
                         "bold": true
                     },
                     {
-                        "text": "    Rent :-"
+                        "text": "    Rent :- "
                     },
                     {
                         "text": "{{baseCharge}}",
@@ -390,7 +406,7 @@
                         "bold": true
                     },
                     {
-                        "text": " Applicant Name :  ",
+                        "text": "   Applicant Name :  ",
                         "width": "auto",
                         "bold": true
                     },
@@ -463,7 +479,7 @@
                                 "text": "Date Of Booking :- "
                             },
                             {
-                                "text": "{{paymentDate}}"
+                                "text": "{{applicationDate}}"
                             }
                         ]
                     },
@@ -492,7 +508,9 @@
                 "fontSize": 12,
                 "margin": [
                     0,
-                    8
+                    10,
+                    0,
+                    10
                 ]
             },
             {
@@ -545,7 +563,7 @@
                                     {
                                         "stack": [
                                             {
-                                                "text": "If the request is made 15 days in advance to the date of use 50%",
+                                                "text": "If the request for cancellation is received one month in advance than the date of booking. 50%",
                                                 "margin": [
                                                     0,
                                                     5,
@@ -558,7 +576,7 @@
                                     {
                                         "stack": [
                                             {
-                                                "text": "Between 15 days to 7 days in advance 25%",
+                                                "text": "If the request for cancellation is received less one month ans more than 15 days than date of booking. 25%",
                                                 "margin": [
                                                     0,
                                                     5,
@@ -571,7 +589,7 @@
                                     {
                                         "stack": [
                                             {
-                                                "text": "Within 7 days Nll%",
+                                                "text": "If the request for cancellation is received less than 15 days than the date of booking. Nll% ",
                                                 "margin": [
                                                     0,
                                                     5,
@@ -601,19 +619,6 @@
                     {
                         "stack": [
                             {
-                                "text": "In case of Lawn of community senter/janj ghar the electricity connection is to be arranged by the consumer.",
-                                "margin": [
-                                    0,
-                                    5,
-                                    0,
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "stack": [
-                            {
                                 "text": "Permission for serving liquor has to be obtained separately from Excise & Taxation Department.",
                                 "margin": [
                                     0,
@@ -627,7 +632,7 @@
                     {
                         "stack": [
                             {
-                                "text": "You are directed to comply with the quidlines(attached) pertaining to pervention of fire.",
+                                "text": "You are directed to comply with the guidlines(attached) pertaining to pervention of fire.",
                                 "margin": [
                                     0,
                                     5,

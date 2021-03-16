@@ -64,8 +64,7 @@
                 "permanentAddress": "Royal Building",
                 "permanentCity": "Chandigarh",
                 "sector": "7",
-                "placeOfService": "Chandigarh",
-                "custGSTN": ""
+                "fatherName": "RamLal"
             },
             "bookingDetail": {
                 "applicationNumber": "CH-GH-2020-07-25-000183",
@@ -74,45 +73,21 @@
                 "bookingType": "Park",
                 "venueName": "PARK NO 3 INFRONT OF H NO 53 SEC 9 CHD",
                 "sector": "sector 17",
-                "bookingPurpose": "Family Gathering"
-            },
-            "paymentInfo": {
-                "cleaningCharges": "",
-                "baseCharge": "",
-                "cgst": "",
-                "utgst": "",
-                "totalgst": "",
-                "refundableCharges": "",
-                "totalPayment": "",
-                "paymentDate": "",
-                "paymentTime": "",
-                "receiptNo": "ASD/asd/1254"
-            },
-            "tenentInfo": {
-                "mcGSTN": "",
-                "statecode": "",
-                "hsncode": "",
-                "municipalityName": "",
-                "address": "",
-                "contactNumber": "",
-                "webSite": ""
-            },
-            "emp": {
-                "samparkName": "",
-                "samparkaddress": ""
-            },
-            "OtherDetails": {
-                "clchargeforwest": "",
-                "westaddress": "",
-                "clchargeforother": ""
+                "bookingPupose": "Family Gathering"
             },
             "generatedBy": {
-                "generatedBy": "",
-                "generatedDateTime": ""
+                "generatedBy": "Anil Clerk"
             },
             "approvedBy": {
-                "approvedBy": "",
-                "role": ""
+                "approvedBy": "Renil Commissioner",
+                "role": "Additional Commissioner"
+            },
+            "tenantInfo": {
+                "municipalityName": "Municipal Corporation Chandigarh",
+                "address": "New Deluxe Building, Sector 17, Chandigarh",
+                "contactNumber": "+91-172-2541002, 0172-2541003",
+                "logoUrl": "https://chstage.blob.core.windows.net/fileshare/logo.png",
+                "webSite": "http://mcchandigarh.gov.in"
             }
         }
     ]

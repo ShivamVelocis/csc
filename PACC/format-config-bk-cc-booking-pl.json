@@ -1,6 +1,7 @@
 {
     "key": "bk-cc-booking-pl",
     "config": {
+        "pageSize": "A4",
         "content": [
             {
                 "image": "{{pdfLogo}}",
@@ -54,57 +55,130 @@
                     0,
                     0,
                     0,
-                    50
+                    20
+                ]
+            },
+            {
+                "text": "Permission letter for booking of Park/Community Center/Commercial Ground/Open Space",
+                "alignment": "center",
+                "fontSize": 10,
+                "bold": true
+            },
+            {
+                "text": "To,",
+                "margin": [
+                    0,
+                    20,
+                    0,
+                    0
+                ]
+            },
+            {
+                "margin": [
+                    20,
+                    10,
+                    0,
+                    10
+                ],
+                "stack": [
+                    {
+                        "text": "{{applicantName}}"
+                    },
+                    {
+                        "text": "{{applicantAddress1}}",
+                        "margin": [
+                            0,
+                            2,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "text": "{{applicantAddress2}}",
+                        "margin": [
+                            0,
+                            2,
+                            0,
+                            0
+                        ]
+                    }
                 ]
             },
             {
                 "bold": true,
                 "margin": [
                     0,
-                    5,
+                    20,
                     0,
                     0
                 ],
                 "text": [
-                    "Receipt No :",
-                    "{{receiptNo}}"
+                    {
+                        "text": "Receipt No : "
+                    },
+                    {
+                        "text": "{{receiptNo}}"
+                    }
                 ]
             },
             {
                 "bold": true,
                 "margin": [
                     0,
-                    5,
+                    10,
                     0,
                     0
                 ],
                 "text": [
-                    "Subject :",
-                    "Permission to use the ",
-                    "{{venueName}} ",
-                    "{{venueSector}}",
-                    "Chandigarh."
+                    {
+                        "text": "Subject : "
+                    },
+                    {
+                        "text": "Permission to use the "
+                    },
+                    {
+                        "text": "{{venueName}}"
+                    },
+                    {
+                        "text": " "
+                    },
+                    {
+                        "text": "{{venueSector}}"
+                    },
+                    {
+                        "text": " Chandigarh."
+                    }
                 ]
             },
             {
                 "margin": [
                     0,
-                    5,
+                    10,
                     0,
                     0
                 ],
                 "text": [
-                    "Ref: Permission is herby accorded to use the ",
-                    "{{venueName}}",
-                    " center by Holding ",
-                    "{{bookingPurpose}}",
-                    "mentioned in your letter"
+                    {
+                        "text": "Ref : Permission is herby accorded to use the "
+                    },
+                    {
+                        "text": "{{venueName}}"
+                    },
+                    {
+                        "text": " center by Holding "
+                    },
+                    {
+                        "text": "{{bookingPurpose}}"
+                    },
+                    {
+                        "text": " mentioned in your letter"
+                    }
                 ]
             },
             {
                 "margin": [
                     0,
-                    5,
+                    10,
                     0,
                     0
                 ],
@@ -113,48 +187,42 @@
                     {
                         "text": [
                             {
-                                "text": "Cleaning Charges :- "
+                                "text": " Cleaning Charges : "
                             },
                             {
-                                "text": "{{clCharge}",
+                                "text": "{{clCharge}}",
                                 "bold": true
                             },
                             {
-                                "text": " Rent :-",
-                                "margin": [
-                                    0,
-                                    5,
-                                    0,
-                                    0
-                                ]
+                                "text": "    Rent :- "
                             },
                             {
-                                "text": "{{baseCharge}",
+                                "text": "{{baseCharge}}",
                                 "bold": true
                             },
                             {
-                                "text": " UTGST :- "
+                                "text": "    UTGST :- "
                             },
                             {
                                 "text": "{{utgst}}",
                                 "bold": true
                             },
                             {
-                                "text": " CGST :- "
+                                "text": "    CGST :- "
                             },
                             {
                                 "text": "{{cgst}}",
                                 "bold": true
                             },
                             {
-                                "text": "Total GST :- "
+                                "text": "    Total GST :- "
                             },
                             {
                                 "text": "{{tgst}}",
                                 "bold": true
                             },
                             {
-                                "text": " Refundable Security :- "
+                                "text": "   Refundable Security :- "
                             },
                             {
                                 "text": "{{refundableCharges}}",
@@ -167,24 +235,51 @@
             {
                 "margin": [
                     0,
-                    5,
+                    10,
+                    0,
+                    0
+                ],
+                "text": [
+                    {
+                        "text": "Date/Venue Change Charges : "
+                    },
+                    {
+                        "text": "{{dateVenueChangeCharges}}",
+                        "bold": true
+                    }
+                ]
+            },
+            {
+                "margin": [
+                    0,
+                    10,
                     0,
                     0
                 ],
                 "columns": [
                     {
                         "text": [
-                            "Customer GST No ",
-                            "{{custGSTN}}"
+                            {
+                                "text": "Customer GST No : "
+                            },
+                            {
+                                "text": "{{custGSTN}}"
+                            }
                         ]
                     },
                     {
                         "stack": [
                             {
                                 "text": [
-                                    "MIC GST No :",
-                                    "{{mcGSTN}}",
-                                    " (MUNICIPAL CORPORATION CHANDIGARH)"
+                                    {
+                                        "text": "MIC GST No : "
+                                    },
+                                    {
+                                        "text": "{{mcGSTN}}"
+                                    },
+                                    {
+                                        "text": " (MUNICIPAL CORPORATION CHANDIGARH)"
+                                    }
                                 ]
                             }
                         ]
@@ -194,22 +289,28 @@
             {
                 "margin": [
                     0,
-                    5,
+                    10,
                     0,
                     0
                 ],
                 "text": [
-                    "Place of Service ",
+                    {
+                        "text": "Place of Service : "
+                    },
                     {
                         "text": "{{placeOfService}}",
                         "bold": true
                     },
-                    " State Code ",
+                    {
+                        "text": "    State Code : "
+                    },
                     {
                         "text": "{{stateCode}}",
                         "bold": true
                     },
-                    " HSN Code ",
+                    {
+                        "text": "    HSN Code : "
+                    },
                     {
                         "text": "{{hsnCode}}",
                         "bold": true
@@ -219,12 +320,14 @@
             {
                 "margin": [
                     0,
-                    5,
+                    10,
                     0,
                     0
                 ],
                 "text": [
-                    "Total Amount :- ",
+                    {
+                        "text": "Total Amount :- "
+                    },
                     {
                         "text": "{{totalPayment}}",
                         "bold": true
@@ -234,7 +337,58 @@
             {
                 "margin": [
                     0,
-                    5,
+                    10,
+                    0,
+                    0
+                ],
+                "text": [
+                    {
+                        "text": "Bank Details for Refund : ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "   Applicant Name :  ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{accountholderName}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "    Bank Name :  ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{rBankName}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "    Bank A/C No. :  ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{rBankACNo}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "     IFSC Code : ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{rIFSCCode}}",
+                        "width": "auto"
+                    }
+                ]
+            },
+            {
+                "margin": [
+                    0,
+                    10,
                     0,
                     0
                 ],
@@ -263,9 +417,10 @@
                 "text": "The permission is accorded at following term and conditions:-",
                 "alignment": "center",
                 "bold": true,
+                "fontSize": 12,
                 "margin": [
                     0,
-                    5
+                    15
                 ]
             },
             {
@@ -419,15 +574,33 @@
                             0
                         ],
                         "text": [
-                            "A sum of Rs. ",
-                            "{{charge}}",
-                            " for ",
-                            "{{commAdd}}",
-                            " and Rs. ",
-                            "{{othComChrge}}",
-                            " for other community center needs to be deposited with the supervisor community Center as cleaning Charges security.",
-                            " In case the permission holder wants to get the community Center celaned at hiscost the cleaning charges security shall be refunded by supervisor, to the permission holder.",
-                            " Other wise the supervisor are authorized to use these cleaning charges security to get the community center cleaned."
+                            {
+                                "text": "A sum of Rs. "
+                            },
+                            {
+                                "text": "2000/-"
+                            },
+                            {
+                                "text": " for community center "
+                            },
+                            {
+                                "text": "37, 38 (west) 43 & 50"
+                            },
+                            {
+                                "text": " and Rs. "
+                            },
+                            {
+                                "text": "1000"
+                            },
+                            {
+                                "text": " for other community center needs to be deposited with the supervisor community Center as cleaning Charges security."
+                            },
+                            {
+                                "text": " In case the permission holder wants to get the community Center celaned at hiscost the cleaning charges security shall be refunded by supervisor, to the permission holder."
+                            },
+                            {
+                                "text": " Other wise the supervisor are authorized to use these cleaning charges security to get the community center cleaned."
+                            }
                         ]
                     },
                     {
@@ -442,6 +615,51 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "margin": [
+                            0,
+                            5,
+                            0,
+                            0
+                        ],
+                        "text": "Organsiers/Applicant ensure the compliance of Model of Conduct rule general Election og Lock Sabha 2019."
+                    },
+                    {
+                        "margin": [
+                            0,
+                            5,
+                            0,
+                            0
+                        ],
+                        "text": "Organsiers/Applicant shall no political issue is involved & this for Nobel cause."
+                    },
+                    {
+                        "margin": [
+                            0,
+                            5,
+                            0,
+                            0
+                        ],
+                        "text": "In case any violation of Model conduct rule is found, I shall be liable for action."
+                    },
+                    {
+                        "margin": [
+                            0,
+                            5,
+                            0,
+                            0
+                        ],
+                        "text": "The Organisers will also compliance the guidelines and orders issued by MOHFW or any other Competent Authority regarding COVID-19 or implementing of Law & Orders."
+                    },
+                    {
+                        "margin": [
+                            0,
+                            5,
+                            0,
+                            0
+                        ],
+                        "text": "The Commissioner Municipal Corporation Chandigarh reserve the right to cancel the booking at any time. If the accommodation is required for isolation home & quarantine center of any other purpose pertaining to COVID-19."
                     }
                 ]
             }
