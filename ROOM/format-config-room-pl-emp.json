@@ -71,12 +71,31 @@
                 ]
             },
             {
-                "text": "FROM"
+                "margin": [
+                    0,
+                    20,
+                    0,
+                    0
+                ],
+                "columns": [
+                    {
+                        "text": "FROM,",
+                        "width": 350
+                    },
+                    {
+                        "text": "Date : ",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "{{paymentDate}}",
+                        "width": "auto"
+                    }
+                ]
             },
             {
                 "margin": [
                     40,
-                    5,
+                    -5,
                     0,
                     0
                 ],
@@ -143,6 +162,23 @@
                     },
                     {
                         "text": "{{receiptNo}}"
+                    }
+                ]
+            },
+            {
+                "bold": true,
+                "margin": [
+                    0,
+                    10,
+                    0,
+                    0
+                ],
+                "text": [
+                    {
+                        "text": "Application No : "
+                    },
+                    {
+                        "text": "{{applicationNumber}}"
                     }
                 ]
             },
@@ -269,23 +305,6 @@
                     },
                     {
                         "text": "{{refundableCharges}}",
-                        "bold": true
-                    }
-                ]
-            },
-            {
-                "margin": [
-                    0,
-                    10,
-                    0,
-                    0
-                ],
-                "text": [
-                    {
-                        "text": "Date/Venue Change Charges : "
-                    },
-                    {
-                        "text": "{{dateVenueChangeCharges}}",
                         "bold": true
                     }
                 ]
@@ -439,6 +458,15 @@
                     },
                     {
                         "text": "{{rIFSCCode}}",
+                        "width": "auto"
+                    },
+                    {
+                        "text": "     Nominee Name : ",
+                        "width": "auto",
+                        "bold": true
+                    },
+                    {
+                        "text": "{{NomName}}",
                         "width": "auto"
                     }
                 ]

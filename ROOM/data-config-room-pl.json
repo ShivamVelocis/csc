@@ -25,11 +25,6 @@
                                 }
                             },
                             {
-                                "variable": "pdfLogo",
-                                "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
-                                "type": "image"
-                            },
-                            {
                                 "variable": "municipalityName",
                                 "value": {
                                     "path": "$.tenantInfo.municipalityName"
@@ -105,6 +100,12 @@
                                 "variable": "venueSector",
                                 "value": {
                                     "path": "$.bookingDetails.sector"
+                                }
+                            },
+                            {
+                                "variable": "applicationNumber",
+                                "value": {
+                                    "path": "$.bookingDetails.applicationNumber"
                                 }
                             },
                             {
@@ -211,7 +212,7 @@
                             },
                             {
                                 "variable": "pdfLogo",
-                                "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
+                                "url": "https://egov.chandigarhsmartcity.in/employee/static/media/pblogo.2feffb62.png",
                                 "type": "image"
                             },
                             {
@@ -248,6 +249,12 @@
                                 "variable": "rIFSCCode",
                                 "value": {
                                     "path": "$.bankInfo.rIFSCCode"
+                                }
+                            },
+                            {
+                                "variable": "NomName",
+                                "value": {
+                                    "path": "$.bankInfo.nomName"
                                 }
                             }
                         ]

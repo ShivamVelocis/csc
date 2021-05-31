@@ -37,8 +37,14 @@
                         }
                      },
                      {
+                        "variable": "NomName",
+                        "value": {
+                            "path": "$.bankInfo.nomName"
+                        }
+                    },
+                     {
                         "variable": "pdfLogo",
-                        "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
+                        "url": "https://egov.chandigarhsmartcity.in/employee/static/media/pblogo.2feffb62.png",
                         "type": "image"
                      },
                      {
@@ -105,6 +111,12 @@
                         "variable": "venueSector",
                         "value": {
                            "path": "$.bookingDetail.sector"
+                        }
+                     },
+                     {
+                        "variable": "applicationNumber",
+                        "value": {
+                           "path": "$.bookingDetail.applicationNumber"
                         }
                      },
                      {
@@ -226,11 +238,6 @@
                         "value": {
                            "path": "$.generatedBy.generatedBy"
                         }
-                     },
-                     {
-                        "variable": "pdfLogo",
-                        "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
-                        "type": "image"
                      },
                      {
                         "variable": "approvedBy",

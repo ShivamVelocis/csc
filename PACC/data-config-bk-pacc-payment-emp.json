@@ -50,6 +50,12 @@
                         }
                      },
                      {
+                        "variable": "NomName",
+                        "value": {
+                            "path": "$.bankInfo.nomName"
+                        }
+                    },
+                     {
                         "variable": "samparkAdd",
                         "value": {
                            "path": "$.emp.address"
@@ -147,7 +153,7 @@
                      },
                      {
                         "variable": "pdfLogo",
-                        "url": "http://mcchandigarh.gov.in/sites/default/files/mc-chandigardh-logo.png",
+                        "url": "https://egov.chandigarhsmartcity.in/employee/static/media/pblogo.2feffb62.png",
                         "type": "image"
                      },
                      {
